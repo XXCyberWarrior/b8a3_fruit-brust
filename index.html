@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +21,154 @@
     <!-- Customizing Config -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
+
+<body class="font-lato">
+    <header class=" container mx-auto font-lato pt-5 md:p-0 md:mt-12">
+        <!-- Start Navber Section  -->
+        <nav class="">
+            <div
+                class=" md:flex md:flex-row md:justify-between md:items-center md:bg-[#F85559] text-black md:text-white lg:px-14 md:px-0 rounded-full">
+                <!--Start Navber Item Section  -->
+                <div>
+                    <ul
+                        class="hidden md:flex md:flex-row justify-center items-center md:gap-2 lg:gap-7 md:px-5 md:py-6 lg:py-10">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+                <!-- End Navber Section  -->
+                <div class="flex justify-between items-center">
+                    <div class="flex md:justify-center items-center gap-2 px-7 md:p-0">
+                        <div>
+                            <img class="w-7 md:w-14" src="./images/logo.png" alt="">
+                        </div>
+                        <div class="font-extrabold text-xl">
+                            Fruit Burst
+                        </div>
+                    </div>
+                    <div class="md:hidden mr-4">
+                        <div class="navbar-end">
+                            <div class="dropdown">
+                                <label tabindex="0" class="btn btn-ghost btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h16M4 18h7" />
+                                    </svg>
+                                </label>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                                    <li>Home</li>
+                                    <li>About Us</li>
+                                    <li>Shop</li>
+                                    <li>All Fruits</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex justify-center items-center md:mr-5">
+                    <input class="lg:w-96 md:h-11 lg:h-14 rounded-full px-7" type="text" placeholder="Search Here">
+                </div>
+            </div>
+        </nav>
+        <!-- End Navber Secton  -->
+
+        <!-- Banner Start Section  -->
+    <div class="container mx-auto mt-5 md:mt-14 ">
+        <div class="carousel w-full relative">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="absolute text-white text-center bottom-5 start-24 md:top-1/4  md:start-60 lg:inset-x-32">
+              <h1 class="lg:mb-6 text-xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+            <img src="./images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="absolute text-white text-center bottom-5 start-24 md:top-1/4  md:start-60 lg:inset-x-32">
+              <h1 class="lg:mb-6 text-xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+            <img src="./images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="absolute text-white text-center bottom-5 start-24 md:top-1/4  md:start-60 lg:inset-x-32">
+              <h1 class="lg:mb-6 text-xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+            <img src="./images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="absolute text-white text-center bottom-5 start-24 md:top-1/4  md:start-60 lg:inset-x-32">
+              <h1 class="lg:mb-6 text-xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+            <img src="./images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative -top-36 left-48">
+          <div
+            class="hidden lg:flex justify-between items-center text-center py:-12 p-16 bg-base-100 shadow-xl gap-24 space-y-4  max-w-6xl rounded-xl">
+            <div class="">
+              <img src="./images/fruit1.png" alt="">
+              <p class="text-xl font-medium">Strawberry</p>
+            </div>
+            <div>
+              <img src="./images/fruit2.png" alt="">
+              <p class="text-xl font-medium">Orange</p>
+            </div>
+            <div>
+              <img src="./images/fruit3.png" alt="">
+              <p class="text-xl font-medium">Mango</p>
+            </div>
+            <div>
+              <img src="./images/fruit4.png" alt="">
+              <p class="text-xl font-medium">Strawberry</p>
+            </div>
+            <div>
+              <img src="./images/fruit5.png" alt="">
+              <p class="text-xl font-medium">Strawberry</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      
+      <!-- Banner End Section  -->
+
+    </header>
+</body>
+
+</html>
