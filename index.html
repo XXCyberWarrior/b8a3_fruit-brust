@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Flowbite link Steup  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
@@ -244,7 +247,11 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-[#F85559] text-lg">Details</p>
+                            <p data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+                                class="inline-block text-lg text-[#F85559] cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                type="button">
+                                Details
+                                <p />
                         </div>
                     </div>
                 </div>
@@ -266,7 +273,11 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-[#F85559] text-lg">Details</p>
+                            <p data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+                                class="inline-block text-lg text-[#F85559] cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                type="button">
+                                Details
+                                <p />
                         </div>
                     </div>
                 </div>
@@ -288,7 +299,11 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-[#F85559] text-lg">Details</p>
+                            <p data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+                                class="inline-block text-lg text-[#F85559] cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                type="button">
+                                Details
+                                <p />
                         </div>
                     </div>
                 </div>
@@ -310,7 +325,11 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-[#F85559] text-lg">Details</p>
+                            <p data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+                                class="inline-block text-lg text-[#F85559] cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                type="button">
+                                Details
+                                <p />
                         </div>
                     </div>
                 </div>
@@ -605,6 +624,39 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal Effect  -->
+    <div id="popup-modal" tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-md max-h-full">
+            <div class="card w-96 bg-white shadow-xl ">
+                <figure>
+                    <div class="flex justify-center items-center">
+                        <img src="./images/fruit7.png" alt="Shoes" class="h-20 mt-12" />
+                    </div>
+
+                </figure>
+
+                <div class="card-body text-center">
+                    <p class="mb-6 text-4xl font-extrabold">Apples</p>
+                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="mb-8">
+                        <div class="rating text-">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-500" />
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn ">Close</button>
+                        <button class="btn btn-error">Bye NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
